@@ -18,6 +18,7 @@ struct QuantityFavoriteDetailView: View {
         HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 6, content: {
             Button(action: {
                 if counter > 0 {
+                    feedbacks.impactOccurred()
                     counter -= 1
                 }
             }, label: {
@@ -30,6 +31,7 @@ struct QuantityFavoriteDetailView: View {
             
             Button(action: {
                 if counter < 100 {
+                    feedbacks.impactOccurred()
                     counter += 1
                 }
             }, label: {
